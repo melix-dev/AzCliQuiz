@@ -33,6 +33,7 @@ namespace AzCliQuiz.ConsoleApp
             {
                 if (!string.IsNullOrEmpty(command.ElementAt(0)) && !string.IsNullOrEmpty(command.ElementAt(1)))
                 {
+                    // We can only show questions where the description is not empty
                     azCliCommands.Add(command.ElementAt(0), command.ElementAt(1));
                 }
             }
