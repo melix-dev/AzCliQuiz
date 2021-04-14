@@ -96,7 +96,7 @@ namespace AzCliQuiz.ConsoleApp
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Wrong, please try again...");
-                    Console.WriteLine("Hint: the command start with '" + question.Key.Substring(0, 4));
+                    Console.WriteLine("Hint: the command starts with '" + question.Key.Substring(0, 4) + "'");
                     retryCount++;
                     Console.ForegroundColor = ConsoleColor.White;
                 }
