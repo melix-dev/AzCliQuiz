@@ -30,7 +30,7 @@ jobs:
 
     - name: .NET code metrics
       id: dotnet-code-metrics
-      uses: melix-dev/GithubAction.CodeMetrics/DotNet.GitHubAction@main
+      uses: melix-dev/GithubAction.CodeMetrics/DotNet.GitHubAction@master
       env:
         GREETINGS: 'Hello, .NET developers!' # ${{ secrets.GITHUB_TOKEN }}
       with:
