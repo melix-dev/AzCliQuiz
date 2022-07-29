@@ -30,14 +30,14 @@ jobs:
 
     - name: .NET code metrics
       id: dotnet-code-metrics
-      uses: melix-dev/GithubAction.CodeMetrics/DotNet.GitHubAction@master
+      uses: melix-dev/GithubAction.CodeMetrics@master
       env:
         GREETINGS: 'Hello, .NET developers!' # ${{ secrets.GITHUB_TOKEN }}
       with:
         owner: ${{ github.repository_owner }}
         name: ${{ github.repository }}
         branch: ${{ github.ref }}
-        dir: ${{ './github-actions/DotNet.GitHubAction' }}
+        dir: ${{ './DotNet.GitHubAction' }}
       
     - name: Create pull request
       uses: peter-evans/create-pull-request@v3.4.1
